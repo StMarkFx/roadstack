@@ -21,3 +21,53 @@ An interactive web application that helps developers visualize clear learning pa
 - **Database**: Supabase (PostgreSQL)
 - **Authentication**: Supabase Auth
 - **Deployment**: Vercel
+
+## 📋 Prerequisites
+
+- Node.js 18.x or higher
+- npm or yarn
+- Git
+
+## 🚀 Getting Started
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/tech-roadmap-app.git
+cd tech-roadmap-app
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+# Set up environment variables
+cp .env.example .env.local
+# Fill in your Supabase credentials in .env.local
+```
+
+### Running Locally
+
+```bash
+# Start the development server
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+### Building for Production
+
+```bash
+# Create an optimized production build
+npm run build
+# or
+yarn build
+
+# Start the production server
+npm start
+# or
+yarn start
+```
