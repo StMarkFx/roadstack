@@ -99,3 +99,69 @@ tech-roadmap-app/
 - **SkillCard**: Displays information about skills and associated resources
 - **ProjectCard**: Shows recommended projects with descriptions
 - **ProgressTracker**: Tracks and displays user progress
+
+## 🔄 Data Structure
+
+```typescript
+// Example roadmap structure
+interface Roadmap {
+  id: string;
+  title: string;
+  description: string;
+  stages: Stage[];
+}
+
+interface Stage {
+  name: string;
+  skills: Skill[];
+  projects: Project[];
+}
+
+interface Skill {
+  id: string;
+  name: string;
+  description: string;
+  resources: Resource[];
+}
+
+interface Resource {
+  type: 'Course' | 'GitHub' | 'Article';
+  title: string;
+  url: string;
+  description?: string;
+}
+
+interface Project {
+  name: string;
+  description: string;
+  difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
+}
+```
+
+## 🧪 Testing
+
+```bash
+# Run tests
+npm test
+# or
+yarn test
+```
+
+## 📝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Adding New Roadmaps
+
+To add a new technology roadmap:
+
+1. Create a new file in `src/data/roadmaps/your-tech-path.ts`
+2. Follow the existing roadmap data structure
+3. Add your roadmap to the exports in `src/data/roadmaps/index.ts`
+4. Add an entry to `src/data/tech-fields.ts`
