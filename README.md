@@ -71,3 +71,31 @@ npm start
 # or
 yarn start
 ```
+
+## 📁 Project Structure
+
+```
+tech-roadmap-app/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   ├── components/          # React components
+│   │   ├── layout/          # Layout components
+│   │   ├── ui/              # Reusable UI components
+│   │   ├── roadmap/         # Roadmap-specific components
+│   │   └── common/          # Common components
+│   ├── data/                # Roadmap and resource data
+│   ├── lib/                 # Utility functions and hooks
+│   ├── contexts/            # React contexts
+│   └── services/            # External service integrations
+├── public/                  # Static assets
+├── prisma/                  # Database schema (if using Prisma)
+└── tests/                   # Test files
+```
+
+## 🧩 Core Components
+
+- **FieldSelector**: Interactive component for selecting technology fields
+- **RoadmapTimeline**: Visual representation of the learning journey
+- **SkillCard**: Displays information about skills and associated resources
+- **ProjectCard**: Shows recommended projects with descriptions
+- **ProgressTracker**: Tracks and displays user progress
