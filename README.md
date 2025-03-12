@@ -165,3 +165,29 @@ To add a new technology roadmap:
 2. Follow the existing roadmap data structure
 3. Add your roadmap to the exports in `src/data/roadmaps/index.ts`
 4. Add an entry to `src/data/tech-fields.ts`
+
+### Contribution Guidelines
+
+- Ensure resources are high-quality and up-to-date
+- Follow the established data structure
+- Write meaningful commit messages
+- Add tests for new features
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- [Roadmap.sh](https://roadmap.sh) for inspiration
+- [MDN Web Docs](https://developer.mozilla.org) for developer resources
+- [GitHub](https://github.com) for hosting countless learning repositories
+- Icon assets by [Heroicons](https://heroicons.com)
+
+## 📞 Contact
+
+Project Link: [https://github.com/yourusername/tech-roadmap-app](https://github.com/yourusername/tech-roadmap-app)
+
+---
+
+Built with ❤️ for developers on their learning journey
