@@ -1,0 +1,67 @@
+{
+    "name": "tech-roadmap-app",
+    "version": "1.0.0",
+    "description": "An interactive web application that helps developers visualize clear learning paths for various technology careers.",
+    "author": "Your Name",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "test": "jest --watch",
+      "test:coverage": "jest --coverage",
+      "format": "prettier --write .",
+      "prepare": "husky install"
+    },
+    "dependencies": {
+      "@supabase/supabase-js": "^2.0.0",
+      "@tailwindcss/forms": "^0.5.0",
+      "next": "^14.0.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-icons": "^4.8.0",
+      "react-toastify": "^9.0.0",
+      "tailwindcss": "^3.3.0",
+      "typescript": "^5.2.0"
+    },
+    "devDependencies": {
+      "@next/eslint-plugin-next": "^14.0.0",
+      "@testing-library/jest-dom": "^5.16.5",
+      "@testing-library/react": "^14.0.0",
+      "@types/node": "^20.0.0",
+      "@types/react": "^18.2.0",
+      "@typescript-eslint/eslint-plugin": "^6.0.0",
+      "@typescript-eslint/parser": "^6.0.0",
+      "eslint": "^8.50.0",
+      "eslint-config-next": "^14.0.0",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-prettier": "^5.0.0",
+      "husky": "^8.0.0",
+      "jest": "^29.0.0",
+      "lint-staged": "^14.0.0",
+      "prettier": "^3.0.0",
+      "tailwindcss": "^3.3.0"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    },
+    "browserslist": [
+      "defaults",
+      "not IE 11",
+      "maintained node versions"
+    ],
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "**/*.{js,jsx,ts,tsx}": [
+        "eslint --fix",
+        "prettier --write"
+      ]
+    }
+  }
+  
