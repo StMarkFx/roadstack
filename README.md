@@ -1,8 +1,8 @@
-# 🚀 Tech Career Roadmap
+# 🚀 RoadStack
 
 An interactive web application that helps developers visualize clear learning paths for various technology careers. Select your desired tech field and discover a comprehensive roadmap of skills to acquire, projects to build, and curated learning resources.
 
-![Tech Career Roadmap Screenshot](https://via.placeholder.com/1200x630)
+![RoadStack Screenshot](https://via.placeholder.com/1200x630)
 
 ## ✨ Features
 
@@ -20,6 +20,7 @@ An interactive web application that helps developers visualize clear learning pa
 - **Styling**: Tailwind CSS
 - **Database**: Supabase (PostgreSQL)
 - **Authentication**: Supabase Auth
+- **State Management**: React Context API
 - **Deployment**: Vercel
 
 ## 📋 Prerequisites
@@ -86,10 +87,21 @@ tech-roadmap-app/
 │   ├── data/                # Roadmap and resource data
 │   ├── lib/                 # Utility functions and hooks
 │   ├── contexts/            # React contexts
-│   └── services/            # External service integrations
+│   ├── services/            # External service integrations
+│   ├── styles/              # Global styles and Tailwind configuration
+│   ├── hooks/               # Custom React hooks
+│   ├── types/               # TypeScript types and interfaces
 ├── public/                  # Static assets
 ├── prisma/                  # Database schema (if using Prisma)
-└── tests/                   # Test files
+├── tests/                   # Test files
+├── .env.example             # Example environment variables
+├── .gitignore               # Ignored files for Git
+├── tailwind.config.js       # Tailwind CSS configuration
+├── postcss.config.js        # PostCSS configuration
+├── next.config.js           # Next.js configuration
+├── tsconfig.json            # TypeScript configuration
+├── package.json             # Project dependencies and scripts
+└── README.md                # Project documentation
 ```
 
 ## 🧩 Core Components
@@ -191,3 +203,4 @@ Project Link: [https://github.com/yourusername/tech-roadmap-app](https://github.
 ---
 
 Built with ❤️ for developers on their learning journey
+
