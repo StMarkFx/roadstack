@@ -72,3 +72,5 @@ jest.config.js
 .dockerignore  
 Dockerfile  
 docker-compose.yml  
+
+tsconfig.json
