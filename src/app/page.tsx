@@ -59,3 +59,26 @@ import { RoadmapTimeline } from "@/components/roadmap/RoadmapTimeline";
 import { getRoadmapByField } from "@/data/roadmaps";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+
+interface FieldPageProps {
+  params: {
+    field: string;
+  };
+}
+
+export async function generateMetadata({ params }: FieldPageProps): Promise<Metadata> {
+  const roadmap = getRoadmapByField(params.field);
+  if (!roadmap) return { title: "Roadmap Not Found" };
+  
+  return {
+    title: `${roadmap.title} Roadmap - RoadStack`,
+    description: roadmap.description,
+  };
+}
+
+export default function FieldPage({ params }: FieldPageProps) {
+  const roadmap = getRoadmapByField(params.field);
+  
+  if (!roadmap) {
+    notFound();
+  }
