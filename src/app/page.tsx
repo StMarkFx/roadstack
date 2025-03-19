@@ -53,3 +53,9 @@ export default function RootLayout({
     </html>
   );
 }
+
+// src/app/[field]/page.tsx
+import { RoadmapTimeline } from "@/components/roadmap/RoadmapTimeline";
+import { getRoadmapByField } from "@/data/roadmaps";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
