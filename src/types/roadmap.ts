@@ -46,3 +46,24 @@ export interface Project {
   githubRepo?: string;
   demoUrl?: string;
 }
+
+
+// Roadmap stage
+export interface Stage {
+  id?: string;
+  name: string;
+  description?: string;
+  skills: Skill[];
+  projects: Project[];
+}
+
+// Main roadmap structure
+export interface Roadmap {
+  id: string;
+  title: string;
+  description: string;
+  stages: Stage[];
+  estimatedTime?: string; // e.g., "6-12 months"
+  careerPaths?: string[]; // Related career paths
+  recommendedPrerequisites?: string[];
+}
